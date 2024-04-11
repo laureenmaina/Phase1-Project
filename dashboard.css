@@ -12,26 +12,21 @@ div{
 h3{
     color: black;
     position: relative;
-    top: 800px;
+    top: 750px;
 
 }
 h1{
     color: black;
     float: right;
-    /* position: relative;
-    bottom: 50px;
-    right: 30px; */
-       
+   
 }
 .class1{
     padding-top: 2rem;
     padding-bottom: 2rem;
     display: flex;
     position: sticky;
-    background: wheat;
-   
+    background: wheat; 
 }
-
 #span{
     position: absolute;
     cursor: pointer;
@@ -50,7 +45,6 @@ h1{
     position: sticky;
     top: 0;
     left: 0;right: 0;
-    /* background: wheat; */
     z-index: 1000;
 }
 

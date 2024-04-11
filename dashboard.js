@@ -11,7 +11,7 @@ const findLocationBtn = document.getElementById('location');
 const locationDetails = document.getElementById('locationDetails');
 
 // Add an event listener for the button click event
-function  getLocationDetails(){
+function getLocationDetails(){
 findLocationBtn.addEventListener('click', () => {
     const ip = ipInput.value;
     fetch(`https://api.ipgeolocation.io/ipgeo?apiKey=${YOUR_API_KEY}&ip=${ip}`)
