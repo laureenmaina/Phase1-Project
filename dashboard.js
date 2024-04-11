@@ -46,16 +46,6 @@ findLocationBtn.addEventListener('click', () => {
         .catch(error => console.error('Error:', error));
 });}
 
-// let likes = 0;
 
-// function likeLocation() {
-//     likes++;
-//     updateLikes();
-// }
-
-// function updateLikes() {
-//     const likeButton = document.getElementById('likeButton');
-//     likeButton.innerText = `Like (${likes})`;
-// }
 
     
