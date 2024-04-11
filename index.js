@@ -8,8 +8,8 @@
 
 document.addEventListener("DOMContentLoaded", () => {
     getLocationDetails()
-    likeLocation() 
-    updateLikes() 
+    // likeLocation() 
+    // updateLikes() 
   
   })
 
@@ -34,31 +34,32 @@ findLocationBtn.addEventListener('click', () => {
                 <p>Country Code: ${data.country_code2}</p>
                 <p>Calling code: ${data.calling_code}</p>
                 <p>Region: ${data.state_prov}</p>
-                <p>City: ${data.city}</p>
+                <p>Capital city: ${data.city}</p>
                 <p>Zip Code: ${data.zipcode}</p>
                 <p>Latitude: ${data.latitude}</p>
                 <p>Longitude: ${data.longitude}</p>
                 <p>Timezone: ${data.time_zone.name}</p>
                 <p>Timezone Offset: ${data.time_zone.offset}</p>
+                <p>Current Time: ${data.time_zone.offset}</p>
                 <p>Currency: ${data.currency.name} (${data.currency.code})</p>
-                <p>Country Flage: ${data.country_flag}</p>
                 <p>ISP: ${data.isp}</p>
+                <p>State Province: ${data.state_prov}</p>
 
             `;
         })
         .catch(error => console.error('Error:', error));
 });}
 
-let likes = 0;
+// let likes = 0;
 
-function likeLocation() {
-    likes++;
-    updateLikes();
-}
+// function likeLocation() {
+//     likes++;
+//     updateLikes();
+// }
 
-function updateLikes() {
-    const likeButton = document.getElementById('likeButton');
-    likeButton.innerText = `Like (${likes})`;
-}
+// function updateLikes() {
+//     const likeButton = document.getElementById('likeButton');
+//     likeButton.innerText = `Like (${likes})`;
+// }
 
     
