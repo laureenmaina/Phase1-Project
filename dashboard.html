@@ -8,30 +8,33 @@
 </head>
 <body>
 
+  <section class="header">
 
-  <h1> IP Geolocation</h1>
+    <h1 id="head">IP Geolocation </h1>
+
+
+    <nav class="navbar">
+        <div id="close-navbar" class="fas fa-times"></div>
+
+        <a  id="a1" href="#about1">about</a>
+        <a  id="a2" href="/signup.html">Signup</a>
+      
+    </nav>
+
   <input type="text" id="ipInput" placeholder="Enter IP Address">
   <button id="location"   onclick="getLocationDetails()">Find Location</button>
   <div id="locationDetails"></div>
-  <!-- <button id="likeButton" onclick="likeLocation()">Like</button> -->
-  <section>
-  
-<nav class="navbar">
-  <div id="close-bar" class="fas fa-times"></div>
-    <a href="#about"></a>
-  
-</nav>
+ 
 
 
-<section id="about">
-  <span>About</span>
-  <h3>IP Geolocation gives you reliable information on areas via IP addresses therefore avoiding being stuck somewhere or
-     getting to know a place well because this app gives you more than enough information. </h3>
 </section>
 
+<h3 id="about1">IP Geolocation gives you reliable information on areas via IP addresses therefore avoiding being stuck somewhere or
+     getting to know a place well because this app gives you more than enough information. </h3>
 
 
-  </section>
+<script src="https://cdnjs.cloudflare.com/ajax"></script>
     <script src="dashboard.js"></script>
+    
 </body>
 </html>
