@@ -36,7 +36,6 @@ findLocationBtn.addEventListener('click', () => {
                 <p>Longitude: ${data.longitude}</p>
                 <p>Timezone: ${data.time_zone.name}</p>
                 <p>Timezone Offset: ${data.time_zone.offset}</p>
-                <p>Current Time: ${data.time_zone.offset}</p>
                 <p>Currency: ${data.currency.name} (${data.currency.code})</p>
                 <p>ISP: ${data.isp}</p>
                 <p>State Province: ${data.state_prov}</p>
