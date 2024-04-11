@@ -7,22 +7,32 @@
     <link rel="stylesheet" href="dashboard.css">
 </head>
 <body>
+  
+  <ul class="nav justify-content-end">
+    <li class="nav-item">
+      <a class="nav-link active" aria-current="page" href="#">Active</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+    </li>
+  </ul>
+
+
+
+
+
     <h1> IP Geolocation</h1>
     <input type="text" id="ipInput" placeholder="Enter IP Address">
     <button id="location"   onclick="getLocationDetails()">Find Location</button>
     <div id="locationDetails"></div>
     <button id="likeButton" onclick="likeLocation()">Like</button>
 
-    <nav class="nav">
-        <div></div>
-        <a href=""></a>
-
-    </nav>
-
-    <!-- <section>
-        <span id="">About</span>
-        <h3> </h3>
-    </section> -->
 
     <script src="dashboard.js"></script>
 </body>
