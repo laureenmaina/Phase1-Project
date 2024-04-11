@@ -1,6 +1,6 @@
   // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js";
-  import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+  import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-auth.js";
 
 
   const firebaseConfig = {
@@ -11,21 +11,31 @@
     storageBucket: "ip-geolocation-1ccd5.appspot.com",
     messagingSenderId: "969326463426",
     appId: "1:969326463426:web:66f1d5fc7b09167b6dee5b",
-    measurementId: "G-VLD7ME4PMQ"
   };
 
   // Initialize Firebase
   const app = initializeApp(firebaseConfig);
+  const auth =getAuth(app)
 
   //inputs
   const email=document.getElementById('emailsign').value;
   const password=document.getElementById('passwordsign').value;
 
   // submit button
-  const submit=document.getElementById('btnsign');
+  const submit =document.getElementById('btnsign');
   submit.addEventListener('click',function (event){
-    event.preventDefault()
-    alert(5)
+    createUserWithEmailAndPassword(auth, email, password)
+    .then((userCredential) => {
+      // Signed up 
+      const user = userCredential.user;
+      // ...
+    })
+    .catch((error) => {
+      const errorCode = error.code;
+      const errorMessage = error.message;
+      // ..
+    });
+   
   })
  
 
