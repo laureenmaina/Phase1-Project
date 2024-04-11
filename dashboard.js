@@ -1,7 +1,3 @@
-//a GET request can be used to retrieve information about a specific IP address,
-// while a POST request can be used to create a new IP address resource. 
-//A PUT request can be used to update the state or details of an existing IP address resource, and a 
-//DELETE request can be used to remove an IP address resource
 document.addEventListener("DOMContentLoaded", () => {
     getLocationDetails()
     // likeLocation() 
