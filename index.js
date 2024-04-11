@@ -2,10 +2,6 @@
 // while a POST request can be used to create a new IP address resource. 
 //A PUT request can be used to update the state or details of an existing IP address resource, and a 
 //DELETE request can be used to remove an IP address resource
-
-
-// $ curl https://api.ipgeolocation.io/ipgeo?ip=41.80.118.233
-
 document.addEventListener("DOMContentLoaded", () => {
     getLocationDetails()
     // likeLocation() 
@@ -44,6 +40,7 @@ findLocationBtn.addEventListener('click', () => {
                 <p>Currency: ${data.currency.name} (${data.currency.code})</p>
                 <p>ISP: ${data.isp}</p>
                 <p>State Province: ${data.state_prov}</p>
+                <p>In European Union?: ${data.is_eu}</p>
 
             `;
         })
