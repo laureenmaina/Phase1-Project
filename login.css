@@ -5,6 +5,7 @@ button{
     height: 35px;
 }
 form{
+    color: white;
     text-align: center;
     width: 70%;
     margin-bottom: 30%;
@@ -27,6 +28,9 @@ input{
     padding-left: 10px;
 }
 body{
+    background-image: url(images/login.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     margin-top: 20px;
     width: 40%;
     padding-left: 28%; 
