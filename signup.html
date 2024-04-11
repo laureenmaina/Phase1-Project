@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Signup</title>
     <link rel="stylesheet" href="signup.css">
+    <script type="module"src='register.js' defer></script>
 </head>
 <body>
     <div class="form">
@@ -16,10 +17,10 @@
             <p style="font-size: 20px;">Signup to IP Geolocation</p>
             <input type="text"placeholder="First Name" style="height: 30px">  <br><br>
             <input type="text"placeholder="Last Name" style="height: 30px"> <br><br>
-            <input type="email"placeholder="Email address or phone number" style="height: 30px;"> <br> <br>
-            <input type="password"placeholder="Password" style="height: 30px"> <br><br>
+            <input id="emailsign" type="email"placeholder="Email address or phone number" style="height: 30px;"> <br> <br>
+            <input id="passwordsign"  type="password"placeholder="Password" style="height: 30px"> <br><br>
        
-            <button type="submit"><b>Sign Up</b></button> <br> <br>
+            <button id="btnsign" type="submit"><b>Sign Up</b></button> <br> <br>
        <a href="/login.html">Login to an existing account</a>
        <a href="/dashboard.html">Home</a>
            
