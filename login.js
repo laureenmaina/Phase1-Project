@@ -19,18 +19,18 @@ const auth = getAuth(app)
 
 
 // submit button
-const submit = document.getElementById('btnsign');
-submit.addEventListener('click', function (event) {
+const submit = document.getElementById('btnlogin');
+  submit.addEventListener('click', function (event) {
   event.preventDefault()
   //inputs
-  const email = document.getElementById('emailsign').value;
-  const password = document.getElementById('passwordsign').value;
+  const email = document.getElementById('emaillog').value;
+  const password = document.getElementById('passlog').value;
 
   signInWithEmailAndPassword(auth, email, password)
     .then((userCredential) => {
       // Signed up 
       const user = userCredential.user;
-      alert("Creating Account...")
+      alert("Loging in...")
 
     })
     .catch((error) => {
