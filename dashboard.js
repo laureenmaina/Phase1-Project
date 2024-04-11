@@ -1,8 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
     getLocationDetails()
-    // likeLocation() 
-    // updateLikes() 
-  
+      
   })
 
 const YOUR_API_KEY="d3abded7f27a4ef8ae1c0dbdc874e905"
