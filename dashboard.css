@@ -1,9 +1,9 @@
-@import url(bootstrap.css);
+/* @import url(bootstrap.css); */
 body{
     background-image: url("images/map.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100%;
+   
 }
 
 div{
@@ -15,8 +15,8 @@ h3{
     top: 750px;
 
 }
-h1{
-    color: black;
+footer{
+    color: white;
     float: right;
    
 }
