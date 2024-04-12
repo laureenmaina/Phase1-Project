@@ -21,7 +21,7 @@ const auth = getAuth(app)
 // submit button
 const submit = document.getElementById('btnsign');
 submit.addEventListener('click', function (event) {
-  // event.preventDefault()
+  event.preventDefault()
   //inputs
   const email = document.getElementById('emailsign').value;
   const password = document.getElementById('passwordsign').value;
