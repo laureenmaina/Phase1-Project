@@ -6,7 +6,12 @@
 
 It's a web application that helps people get to know information of a place by just entering its IP address.Information given are continent name,country name,capital city among others.
 
-**Start using the application!**
+## Technologies used
+Github
+Javascript
+HTML
+CSS
+Bootstrap
 
 ## Live Site
 
